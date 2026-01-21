@@ -1,0 +1,22 @@
+type Movie {
+    id: ID!
+    title: String!
+    genre: String
+    director: Director
+    comment: String
+    rating: Int
+}
+
+type  Query {
+    findMovieById(id: ID!): Movie
+}
+
+type Director {
+    id: ID!
+    name: String!
+    totalAwards: Int
+}
+
+type Mutation {
+    addReview(movieId: ID!, comment: String, rating: Int): Movie
+}
