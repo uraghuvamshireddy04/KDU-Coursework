@@ -1,5 +1,5 @@
 // 1.1 Task Constructor
-function Task(title, priority){
+function Task(title="A", priority="low"){
     this.id = Date.now();
     this.title = title;
     this.priority = priority;
@@ -38,7 +38,7 @@ Task.prototype.getAllTasksInfo = function(tasks) {
 }
 
 // 1.3 PriorityTask Constructor
-function PriorityTask (title, priority, dueDate) {
+function PriorityTask (title="A", priority="low", dueDate) {
         Task.call(this, title, priority);
         this.dueDate = dueDate;
     
