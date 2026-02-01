@@ -1,0 +1,32 @@
+.comment-section {
+  margin-left: 60px;
+  margin-top: 11px;
+  padding-top: 11px;
+  border-top: 1px solid $color-border;
+
+  .comment-input-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+
+    input {
+      flex: 1;
+      background: transparent;
+      border: 1px solid $color-border;
+      border-radius: 20px;
+      padding: 5px 15px;
+      color: white;
+    }
+    .comment-submit {
+      background: $color-blue;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 15px;
+    }
+  }
+  .comment-item {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: $color-text-gray;
+  }
+}

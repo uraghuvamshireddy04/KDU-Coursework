@@ -1,0 +1,48 @@
+.posts {
+  .post {
+    padding: 15px;
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    flex-direction: column;
+
+    .post-header {
+      @include flex-align-center;
+      gap: 5px;
+      margin-bottom: 5px;
+
+      img {
+        @include profile-img(48px);
+        margin-right: 10px;
+      }
+
+      .twitter-name {
+        color: $color-text-gray;
+      }
+    }
+
+    .post-text {
+      margin-left: 60px;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .post-actions {
+      margin-left: 60px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 425px;
+      color: $color-text-gray;
+
+      button,
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .like-post:hover {
+        color: $color-red-like;
+      }
+    }
+  }
+}
