@@ -1,0 +1,58 @@
+.stocks{
+    flex-direction: column;
+    font-weight: bold;
+    width: 75%;
+
+}
+
+.stocks-nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.company{
+    @include border-color-lines($border-shape,$border-color );
+    @include flex-justify-center;
+    gap: 8px;
+    padding: 2px;
+    flex:1;
+    height: auto;
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+
+.price{
+    @include border-color-lines($border-shape, $border-color );
+    @include flex-justify-center;
+    gap: 8px;
+    padding: 2px;
+    flex:1;
+    height: auto;
+}
+
+.buy{
+    @include button-color( $buy-color, #b2f266)
+}
+
+.sell{
+    @include button-color($sell-color,#ffc9c9)
+}
+
+.graph{
+     @include border-color-lines($border-shape, $border-color );
+     height: 500px;
+     width: 100%;
+     margin: 5px;
+}
+
+.axis{
+    display: flex;
+    gap: 125px;
+    margin: 5px;
+}
+
+

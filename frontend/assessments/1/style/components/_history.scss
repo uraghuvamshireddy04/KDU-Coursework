@@ -1,0 +1,34 @@
+.history{
+    font-weight: bold;
+    width: 25%;
+    height: 540px;
+    @include border-color-lines($border-shape, $border-color );
+    padding: 10px;
+
+.stock-history{
+    @include flex-justify-center;
+    @include border-color-lines($border-shape, $border-color );
+    margin: 3px;
+    padding: 5px;
+    justify-content: space-between;
+    height: auto;
+    .stock-number{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .stock-hold-buy{
+        color:$buy-color ;
+    }
+
+    .stock-hold-sell{
+        color:  $sell-color;
+    }
+    .date{
+        font-size: small;
+        color: grey;
+    }
+}
+
+}
