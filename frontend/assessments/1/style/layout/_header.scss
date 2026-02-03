@@ -1,0 +1,7 @@
+header{
+    background-color: #1871c2 ;
+    @include border-color-lines($border-shape,$border-color);
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
