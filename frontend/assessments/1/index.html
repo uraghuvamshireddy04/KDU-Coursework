@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Stock Market Updates</title>
+    <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+    <header>
+        <h2>KDU Stock Market Dashboard</h2>
+    </header>
+    <main>
+        <section>
+            <div class="layout">
+                <div class="stocks">
+                    <div class="stocks-nav">
+                        <div class="company">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/af1307136664867.Y3JvcCw1NzUzLDQ1MDAsNDIsMA.jpg" alt="Zomato">
+                            <span>Zomato</span>
+                        </div>
+                        <div class="price">
+                            <p>Price</p>
+                            <div class="price-value"></div>
+                            <span class="price-change"></span>
+                        </div>
+                        <input type="number" placeholder="Enter QTY" class="stock-input" >
+                        <div >
+                            <button class="buy">BUY</button>
+                        </div>
+                        <div >
+                            <button class="sell">SELL</button>
+                        </div>
+
+                    </div>
+                    <div class="graph">
+                    </div>
+                    <div class="axis">
+                        <p>0</p>
+                        <p>100</p>
+                        <p>200</p>
+                        <p>300</p>
+                        <p>400</p>
+                        <p>500</p>
+                        <p>600</p>
+                    </div>
+                </div>
+                <div class="history">
+                    <p>History</p>
+                    <div class="exchanges"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/stocks.js"></script>
+</body>
+</html>
