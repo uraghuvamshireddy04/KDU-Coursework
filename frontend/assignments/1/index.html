@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X Home</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="mobile-header">
+  <div class="profile-icon"> 
+    <img src="icons/profile-icon.svg" alt="Profile" id="mobile-menu-trigger" />
+  </div>
+</header>
+
+<div class="overlay" id="overlay"></div>
+<!-- navigation -->
+ 
+<nav class="navigation-section">
+  <div class="nav-logo">
+    <img src="icons/black-with-white.png" alt="X logo" />
+  </div>
+<div class="profile-top">
+    <div class="profile-photo">
+      <img src="icons/profile-icon.svg" alt="User">
+    </div>
+    <div class="profile-name">
+      <div class="name">My Name</div>
+      <div class="username">@myname</div>
+    </div>
+    <div class="options">
+      <img src="icons/dot-icon.svg" alt="Options">
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <img src="icons/home-icon 1.svg" alt="Home" />
+      <span>Home</span>
+    </li>
+    <li>
+      <img src="icons/search-icon 1.svg" alt="Explore" />
+      <span>Explore</span>
+    </li>
+    <li>
+      <img src="icons/notif-icon.svg" alt="Notifications" />
+      <span>Notifications</span>
+    </li>
+    <li>
+      <img src="icons/mail-icon.svg" alt="Messages" />
+      <span>Messages</span>
+    </li>
+    <li>
+      <img src="icons/slash-icon.svg" alt="Grok" />
+      <span>Grok</span>
+    </li>
+    <li>
+      <img src="icons/list-icon.svg" alt="Lists" />
+      <span>Lists</span>
+    </li>
+    <li>
+      <img src="icons/bookmark-icon.svg" alt="Bookmarks" />
+      <span>Bookmarks</span>
+    </li>
+    <li>
+      <img src="icons/community-icon.svg" alt="Communities" />
+      <span>Communities</span></li>
+    <li>
+      <img src="icons/premium-icon.svg" alt="Premium" />
+      <span>Premium</span>
+    </li>
+
+    <li class="profile-icon">
+      <img src="icons/profile-icon.svg" alt="Profile" />
+      <span>Profile</span></li>
+
+    <li>
+      <img src="icons/more-icon.svg" alt="More" />
+      <span>More</span></li>
+
+  </ul>
+  <button class="nav-post-btn">Post</button>
+
+  <div class="profile-bottom">
+    <div class="profile-photo">
+      <img src="icons/profile-icon.svg" alt="User">
+    </div>
+    <div class="profile-name">
+      <div class="name">My Name</div>
+      <div class="username">@myname</div>
+    </div>
+    <div class="options">
+      <img src="icons/dot-icon.svg" alt="Options">
+    </div>
+  </div>
+</nav>
+<main class="main-content">
+
+  <!-- tweet box -->
+  <section class="tweet-box">
+    <div class="tweet-user">
+      <img src="icons/profile-icon.svg" alt="User profile" />
+    </div>
+
+    <div class="tweet-input-area">
+      <textarea
+        class="post-input"
+        placeholder="What is happening?!"
+      ></textarea>
+
+      <div class="buttons">
+        <div class="left-buttons">
+          <img src="icons/gallery-icon.svg" alt="Gallery">
+          <img src="icons/gif-icon.svg" alt="GIF">
+          <img src="icons/bullet-icon.svg" alt="List">
+          <img src="icons/smiley-icon.svg" alt="Emoji">
+          <img src="icons/calendar-icon.svg" alt="Calendar">
+          <img src="icons/location-icon.svg" alt="Location">
+        </div>
+        <div class="tweet-actions">
+          <button class="tweet-btn">Post</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- posts -->
+  <section class="posts">
+  </section>
+<button class="floating-tweet-box-icon" id="tweet">
+  <img src="icons/plus-icon.svg" alt="Tweet" />
+</button>
+</main>
+<script src="js/post.js"></script>
+<script src="js/post-events.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

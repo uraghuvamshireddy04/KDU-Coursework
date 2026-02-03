@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: $color-white;
+}
+
+.mobile-header, .floating-tweet-box-icon{
+    display: none;
+}
+
+
+body {
+  background-color: $color-black;
+  color: $color-white;
+  font-family: $font-main;
+  display: flex;
+  justify-content: center;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.twitter-handle,
+.post-time {
+  color: $color-text-gray;
+}

@@ -1,0 +1,13 @@
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin rounded-full {
+  border-radius: 9999px;
+}
+
+@mixin profile-img($size) {
+  width: $size;
+  border-radius: 50%;
+}
