@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.stocks {
+  flex-direction: column;
+  font-weight: bold;
+  width: 75%;
+}
+
+.stocks-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.company {
+  border: 1px solid #000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 2px;
+  flex: 1;
+  height: auto;
+}
+.company img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.price {
+  border: 1px solid #000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 2px;
+  flex: 1;
+  height: auto;
+}
+
+.buy {
+  color: #2f9e44;
+  border: 1px solid #2f9e44;
+  background-color: #b2f266;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.sell {
+  color: #e03131;
+  border: 1px solid #e03131;
+  background-color: #ffc9c9;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.graph {
+  border: 1px solid #000;
+  border-radius: 8px;
+  height: 500px;
+  width: 100%;
+  margin: 5px;
+}
+
+.axis {
+  display: flex;
+  gap: 125px;
+  margin: 5px;
+}
+
+header {
+  background-color: #1871c2;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.history {
+  font-weight: bold;
+  width: 25%;
+  height: 540px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+}
+.history .stock-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin: 3px;
+  padding: 5px;
+  justify-content: space-between;
+  height: auto;
+}
+.history .stock-history .stock-number {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.history .stock-history .stock-hold-buy {
+  color: #2f9e44;
+}
+.history .stock-history .stock-hold-sell {
+  color: #e03131;
+}
+.history .stock-history .date {
+  font-size: small;
+  color: grey;
+}
+
+.graph {
+  padding-left: 2px;
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+}/*# sourceMappingURL=main.css.map */
