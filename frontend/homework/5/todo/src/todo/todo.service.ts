@@ -4,6 +4,7 @@ import { CreateTodoDto } from "./dto/create-todo.dto";
 import { TodoResponseDto } from "./dto/todo-response.dto";
 import { randomUUID } from "node:crypto";
 import { Todo } from "./todo.model";
+import { TodoNotFoundException } from "src/common/todo-not-found.exception";
 
 @Injectable()
 export class TodoService {
@@ -43,13 +44,13 @@ export class TodoService {
 
     getTodoById(id: string): TodoResponseDto {
         const todo = this.repo.findById(id);
-        if (!todo) throw new NotFoundException(`Todo ${id} not found`);
+        if (!todo) throw new TodoNotFoundException(id);
         return this.toResponseDto(todo);
     }
 
     deleteTodoById(id: string): TodoResponseDto {
         const todo = this.repo.deleteById(id);
-        if (!todo) throw new NotFoundException(`Todo ${id} not found`);
+        if (!todo) throw new TodoNotFoundException(id);
         return this.toResponseDto(todo);
     }
 
