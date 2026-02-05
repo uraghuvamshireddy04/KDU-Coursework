@@ -1,0 +1,12 @@
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    background-color: $card-background-color;
+    padding: 16px;
+    border-radius: 10px;
+    gap: 5px;
+    font-weight: bold;
+    font-size: large;
+}

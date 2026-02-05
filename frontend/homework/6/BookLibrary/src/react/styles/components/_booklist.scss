@@ -1,0 +1,14 @@
+.main-title{
+    margin: 10px;
+    color: $main-color;
+    text-align: center;
+}
+
+.book-list{
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

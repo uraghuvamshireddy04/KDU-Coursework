@@ -1,0 +1,27 @@
+.book-card{
+    background-color: $card-background-color;
+    padding: 16px;
+    margin: 3px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &.available{
+        @include card-border(green);
+
+        .status{
+            @include status(green)
+        }
+    }
+
+    &.unavailable{
+        @include card-border(red);
+
+        .status{
+            @include status(red)
+        }
+
+    }
+}       
+    

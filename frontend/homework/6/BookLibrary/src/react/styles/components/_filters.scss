@@ -1,0 +1,18 @@
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    input, select{
+        padding: 6px;
+        margin: 8px;
+        border-radius: 8px;
+    }
+}
+
+.no-books{
+    color: $main-color;
+    text-align: center;
+    margin: 10px;
+}
