@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Counter App</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        #counter { font-size: 3rem; color: #007bff; }
+        button { padding: 10px 20px; font-size: 1rem; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Cloud Counter</h1>
+    <h2 id="counter">Loading...</h2>
+    <button id="btn" onclick="increment()">Add Counter</button>
+
+    <script>
+        const API_URL = "https://xb1hcbcqf6.execute-api.ap-northeast-2.amazonaws.com/prod/counter";
+
+        async function getCount() {
+            try {
+                const response = await fetch(API_URL);
+                const data = await response.json();
+                document.getElementById('counter').innerText = data.value ?? 0;
+            } catch (err) {
+                console.error("Error fetching count:", err);
+                document.getElementById('counter').innerText = "Error";
+            }
+        }
+
+        async function increment() {
+            const btn = document.getElementById('btn');
+            btn.disabled = true; 
+
+            try {
+                const response = await fetch(API_URL, { 
+                    method: 'PUT' 
+                });
+                const data = await response.json();
+                
+                document.getElementById('counter').innerText = data.value;
+            } catch (err) {
+                console.error("Error incrementing:", err);
+                alert("Failed to update counter.");
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        getCount();
+    </script>
+</body>
+</html>
