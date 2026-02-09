@@ -1,0 +1,77 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    .button{
+        background-color: rgb(95, 95, 186);
+        padding: 8px;
+        width: 5rem;
+        border-radius: 6px;
+        align-items: flex-end;
+    }
+
+    .cards{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        display: flex;
+        margin-top: 1rem;
+        gap: 1rem;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 800px;
+        
+
+        .image{
+            background-color: rgb(231, 227, 220);
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            object-fit: contain;
+        }
+
+        .content{
+            margin: 1rem;
+            .brand{
+            padding-top: 10px;
+            color:rgb(184, 151, 109) ;
+        }
+
+        .title{
+            margin-top: 10px;
+        }
+
+        .sc{
+            display: flex;
+            gap: 1rem;
+            margin-top: -1rem;
+            color: rgb(184, 151, 109);
+            font-size: small;
+        }
+
+        .prices{
+            margin-top: 1rem;
+        }
+
+        .originalPrice{
+        font-size: large;
+        color: rgb(169, 123, 63);
+        text-decoration: line-through;
+       }
+
+       .price{
+        font-size: x-large;
+        margin-left: 1rem;
+        color: rgb(54, 161, 54);
+        }
+
+        .description{
+            padding-right: 1rem;
+        }
+        }
+
+    }
+}
+
+
