@@ -1,0 +1,50 @@
+.navbar {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(61, 61, 172);
+  padding: 16px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    &.active {
+      font-weight: bold;
+    }
+  }
+  .name{
+    color:white ;
+    font-weight: bold;
+  }
+
+  .navitems{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    .search{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    input{
+      padding: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+
+     button{
+       padding: 5px;
+       width: 2rem;
+       color: white;
+       background-color: rgb(232, 19, 19);
+       border-radius: 8px;
+       cursor: pointer;
+      border: none;
+
+     }
+  }
+
+}

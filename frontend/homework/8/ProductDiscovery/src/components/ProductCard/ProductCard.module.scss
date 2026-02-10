@@ -1,0 +1,69 @@
+.card{
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    .topDetails{
+        display: flex;
+        justify-content: space-between;
+        padding: 3px;
+        align-self: center;
+        background-color: rgb(231, 227, 220);
+
+    }
+
+    .discount{
+        background-color: orangered;
+        border-radius: 9999px;
+        padding: 5px;
+        color: white;
+    }
+
+    .rating{
+        background-color: rgb(50, 27, 27);
+        border-radius: 5px;
+        padding: 5px;
+        color: white;
+    }
+
+    .image{
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        border-radius: 4px;
+        background-color: rgb(231, 227, 220);
+
+    }
+
+    .brand{
+        padding: 0 1rem;
+        margin-top: -5px;
+        color: rgb(169, 123, 63);
+    }
+
+    .title{
+        padding: 0 1rem;
+        margin-top: -1rem;
+    }
+
+    .originalPrice{
+        padding: 0 1rem;
+        font-size: large;
+        margin:-10px 0;
+        color: rgb(169, 123, 63);
+        text-decoration: line-through;
+    }
+
+    .price{
+        padding: 0 1rem;
+        font-size: x-large;
+        margin:-10px 0;
+        color: rgb(54, 161, 54);
+    }
+
+    .stock{
+        padding:0 1rem ;
+        color: rgb(169, 123, 63);
+    }
+}
