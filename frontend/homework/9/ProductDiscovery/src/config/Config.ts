@@ -1,0 +1,17 @@
+export const DEBOUNCE_TIME = 500;
+export const HOME_URL = '/';
+export const PRODUCT_PAGE = '/product/:id'
+export const CART_PAGE = '/cart';
+
+export const FETCH_PRODUCTS_START = 'FETCH_PRODUCTS_START';
+export const FETCH_PRODUCTS_SUCCESS = 'FETCH_PRODUCTS_SUCCESS';
+export const SEARCH_PRODUCTS_START = 'SEARCH_PRODUCTS_START';
+export const FETCH_SINGLE_START = 'FETCH_SINGLE_START';
+export const FETCH_SINGLE_SUCCESS = 'FETCH_SINGLE_SUCCESS';
+export const API_ERROR = 'API_ERROR';
+export const SET_SEARCH_QUERY = 'SET_SEARCH_QUERY';
+export const CLEAR_SEARCH = 'CLEAR_SEARCH';
+
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+export const UPDATE_QUANTITY = 'UPDATE_QUANTITY';
