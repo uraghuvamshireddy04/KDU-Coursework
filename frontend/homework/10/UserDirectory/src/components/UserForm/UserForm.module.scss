@@ -1,0 +1,36 @@
+.userForm{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 12px;
+
+h3{
+    margin: 1rem 2rem;
+}
+
+.formdetails{
+    margin: 1rem 2rem;
+    display: flex;
+    gap:1rem;
+
+}
+button{
+    margin-left: 2rem;
+    background-color: rgb(43, 183, 43);
+    width: 90%;
+    border: none;
+    color: white;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+input{
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 2rem;
+}
+}
+body{
+  background: #facadf;
+background: radial-gradient(circle, rgba(250, 202, 223, 1) 0%, rgba(183, 206, 232, 1) 100%);
+}
