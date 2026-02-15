@@ -1,0 +1,51 @@
+@import "../../styles/main.scss";
+
+.payment{
+    h3{
+            padding: 1rem;
+            border-bottom: $border-bottom;
+            border-top: $border-bottom;
+        }
+
+    p{
+        color: rgb(89, 85, 85);
+        margin:1rem 0;
+        font-weight: 600;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .values{
+
+            display: flex;
+           flex-wrap: wrap;
+           gap: 10px;
+        }
+    }
+
+    input{
+        padding: 8px;
+    }
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .values{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .complete{
+        background-color: rgb(95, 178, 95);
+        color: white;
+        border: none;
+    }
+}

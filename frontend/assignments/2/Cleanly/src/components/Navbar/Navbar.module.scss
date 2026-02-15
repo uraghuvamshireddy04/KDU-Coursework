@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+
+.nav{
+    @include flex-justify-between;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: larger;
+    border-bottom: $border-bottom;
+    .title{
+        color: $main-color;
+        span{
+            color: black;
+        }
+    }
+}

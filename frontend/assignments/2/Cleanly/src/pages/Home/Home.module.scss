@@ -1,0 +1,29 @@
+@import "../../styles/main.scss";
+
+.heading{
+    text-align: center;
+
+    p{
+        color: gray;
+    }
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formPage{
+        width: 75%;
+    }
+
+    .summaryPage{
+        width: 25%;
+    }
+}
