@@ -1,0 +1,99 @@
+@import "../../styles/main.scss";
+
+.options{
+    display: flex;
+    flex-direction: column;
+
+        h3{
+            padding: 1rem;
+            border-bottom: $border-bottom;
+            border-top: $border-bottom;
+        }
+
+    .pref{
+        background-color: $main-color;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        margin-top: 1.5rem;
+    }
+
+    .types{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        
+        p{
+            color: rgb(63, 57, 57);
+        }
+
+
+
+        .choise{
+            margin-top:8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+            .input{
+                display: flex;
+                flex-direction: column;
+            }
+
+            input{
+                margin-top: 5px;
+                width: 100px;
+            }
+
+           
+        }
+
+ 
+
+        
+    }
+    .text{
+            margin-top: 1rem;
+
+            p{
+                color: gray;
+            }
+
+            textarea{
+                margin-top: 8px;
+                margin-bottom: 12px;
+                height: 25vh;
+                width: 80%;
+            }
+    }
+
+    .dates{
+        margin-top: 1rem;
+        display: flex;
+        gap: 20px;
+
+        input{
+            margin-top: 8px;
+            padding:6px;
+            color: gray;
+            border-radius: 4px;
+        }
+
+        p{
+            color: gray;
+        }
+
+        button{
+            margin-bottom: 1rem;
+        }
+    }
+
+     .choises{
+                margin-top:8px;
+               display: flex;
+               flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 1rem;
+               
+            }
+}

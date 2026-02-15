@@ -1,0 +1,16 @@
+@import "../../styles/main.scss";
+
+.summaryContainer{
+
+    h3{
+        background-color: $main-color;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        margin-top: 1.5rem;
+    }
+    p{
+        color: gray;
+        padding: 8px;
+    }
+}
