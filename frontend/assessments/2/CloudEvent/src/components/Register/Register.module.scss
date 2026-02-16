@@ -1,0 +1,90 @@
+@import "../../styles/main.scss";
+
+.main{
+    margin: 3rem 18rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width:60vw;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: $backgroundcolor;
+
+    .register{
+        color: $main-color;
+        text-align: center;
+    }
+
+    .event{
+        color: $main-color;
+        text-align: center;
+        margin: 1rem;
+        padding: 6px;
+        background-color: $main-background-color;
+        border: 2px solid $main-color;
+        border-radius: 6px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        p, label{
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        input, select{
+            margin-top: 5px;
+            padding: 6px;
+            border: 2px solid rgb(161, 156, 156);
+            border-radius: 6px;
+            width: 30vw;
+            height: 6vh;
+            @include mobile{
+                width: 60vw;
+            }
+        }
+
+        textarea{
+            width: 30vw;
+            height: 10vh;
+            margin-top: 5px;
+            padding: 6px;
+            border: 2px solid rgb(161, 156, 156);
+            border-radius: 6px;
+            @include mobile{
+                width: 60vw;
+            }
+        }
+
+        button{
+            padding: 6px;
+            border-radius: 6px;
+            width: 30vw;
+            height: 6vh;
+            color: $successcolor;
+            background-color: $successbackgroundcolor;
+            border: 2px solid $successcolor;
+            font-weight: 600;
+            @include mobile{
+                width: 60vw;
+            }
+        }
+        
+        .required{
+            color: gray;
+            font-size: small;
+            margin-top: 6px;
+        }
+    }
+    @include mobile{
+        margin: 2rem 3rem;
+        width: 75%;
+
+
+}
+}
+
